@@ -50,8 +50,8 @@ app.post('/movies/', async (request, response) => {
       movie (movie_id,director_id,movie_name,lead_actor)
     VALUES
       (
-        '${movie_id}',
-        '${director_id}',
+        ${movie_id},
+        ${director_id},
         '${movie_name}',
         '${lead_actor}'
       );`
